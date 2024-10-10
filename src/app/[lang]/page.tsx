@@ -62,6 +62,7 @@ export default async function OnboardingPage({
       {searchParams.errorMessage && (
         <DismissableAlert message={searchParams.errorMessage} color="danger" />
       )}
+
       <OnboardingForm
         translations={translations}
         userRequirements={userRequirements}
