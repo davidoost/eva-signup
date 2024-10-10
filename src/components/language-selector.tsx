@@ -21,6 +21,7 @@ export default function LanguageSelector({
       onSelectionChange={(keys) =>
         handleSelection(Array.from(keys)[0] as string)
       }
+      aria-label="select-language"
     >
       {Object.entries(availableLanguages).map(([key, label]) => (
         <SelectItem key={key} value={key}>
