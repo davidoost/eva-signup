@@ -86,7 +86,7 @@ To add a new UserRequirement, add it to:
 
 ## Adding new translation languages
 
-- Add a translation file under `src/i18n` with a file name reflecting the language's ISO 639-1 code.
+- Add a translation file under `src/i18n` with a file name reflecting the language's ISO 639-1 code, and add it to the index file.
 
 ## Adding new translation keys
 

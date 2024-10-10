@@ -1,0 +1,50 @@
+import { Translations } from "@/types/translations";
+
+const translations: Translations = {
+  Labels: {
+    SignUpTitle: "Registrati 👋",
+    SuccessTitle: "Fatto ✅",
+    SuccessDescription: "Ti sei registrato con successo!",
+    Order: "Ordine",
+    OrderAttached: "è stato aggiunto al tuo account.",
+  },
+  Inputs: {
+    EmailAddress: "Indirizzo e-mail",
+    EmailAddressPlaceholder: "Inserisci il tuo indirizzo e-mail",
+    EmailAddressErrorMessage: "Inserisci un indirizzo e-mail valido",
+    EmailAddressUnavailableErrorMessage: "Questo indirizzo e-mail è già in uso",
+    FirstName: "Nome",
+    FirstNamePlaceholder: "Inserisci il tuo nome",
+    FirstNameErrorMessage: "Il nome è obbligatorio",
+    LastName: "Cognome",
+    LastNamePlaceholder: "Inserisci il tuo cognome",
+    LastNameErrorMessage: "Il cognome è obbligatorio",
+    CountryID: "Paese",
+    CountryIDPlaceholder: "Seleziona il tuo paese",
+    CountryIDErrorMessage: "Seleziona un paese valido",
+    DateOfBirth: "Data di nascita",
+    DateOfBirthErrorMessage: "Inserisci una data di nascita valida",
+    Gender: "Genere",
+    GenderMale: "Maschio",
+    GenderFemale: "Femmina",
+    GenderOther: "Altro",
+    GenderErrorMessage: "Seleziona un genere",
+    LanguageID: "Lingua",
+    LanguageIDPlaceholder: "Seleziona la tua lingua",
+    LanguageIDErrorMessage: "Seleziona una lingua valida",
+    PhoneNumber: "Numero di telefono",
+    PhoneNumberPlaceholder: "Inserisci il tuo numero di telefono",
+    PhoneNumberErrorMessage: "Inserisci un numero di telefono valido",
+    Password: "Password",
+    PasswordPlaceholder: "Inserisci la tua password",
+    PasswordErrorMessage: "La password è obbligatoria",
+    ConfirmPassword: "Conferma password",
+    ConfirmPasswordPlaceholder: "Conferma la tua password",
+    ConfirmPasswordErrorMessage: "Le password non corrispondono",
+  },
+  Actions: {
+    SignUp: "Registrati",
+  },
+};
+
+export default translations;
