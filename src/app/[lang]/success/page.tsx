@@ -1,8 +1,13 @@
-import getTranslations from "@/functions/get-translations";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Card } from "@nextui-org/react";
 import { Alpha2Code } from "i18n-iso-countries";
 import { redirect } from "next/navigation";
+import {
+  defaultLanguage,
+  getTranslations,
+  availableTranslations,
+} from "@/i18n";
+import { Translations } from "@/types/translations";
 
 export default async function SuccessPage({
   params,
@@ -11,12 +16,18 @@ export default async function SuccessPage({
   params: { lang: Alpha2Code };
   searchParams: { orderId: string };
 }) {
-  const translations = await getTranslations(params.lang);
+  const search = new URLSearchParams(searchParams).toString();
 
-  if (!translations) {
-    const search = new URLSearchParams(searchParams).toString();
-    return redirect(`/en/success?${search}`);
+  // Redirect if the language is not available in translations
+  if (!(params.lang in availableTranslations)) {
+    return redirect(`/${defaultLanguage}?${search}`);
   }
+
+  // Fetch the translations for the valid language
+  const translations: Translations = getTranslations(
+    params.lang as keyof typeof availableTranslations
+  );
+
   return (
     <Card className="w-full max-w-md flex flex-col gap-4 items-center p-4 shadow-none bg-transparent sm:bg-content1 sm:shadow-md">
       <div className="w-full flex flex-col">

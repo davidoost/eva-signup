@@ -3,8 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "EVA Onboarding Template",
-  description: "Onboard Customers seamlessly",
+  title: "Example Signup",
 };
 
 export default function RootLayout({
@@ -13,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-content1 sm:bg-content2 light">
+    <html lang="en" className="bg-content1 sm:bg-content2 fenix">
       <body>
         <Providers>
           <div className="min-h-dvh w-full flex flex-col items-center justify-center sm:p-4">

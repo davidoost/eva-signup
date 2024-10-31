@@ -12,12 +12,11 @@ export default async function subscribeUser(
     })),
   };
 
-  const result = await evaServiceCall({
+  await evaServiceCall({
     service: "/subscribeuser",
     body: body,
     extraHeaders: {
       Authorization: authorization,
     },
   });
-  console.log(result);
 }

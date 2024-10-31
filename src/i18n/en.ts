@@ -1,6 +1,6 @@
 import { Translations } from "@/types/translations";
 
-export const translations: Translations = {
+const translations: Translations = {
   Labels: {
     SignUpTitle: "Sign up 👋",
     SuccessTitle: "Success ✅",
@@ -46,3 +46,5 @@ export const translations: Translations = {
     SignUp: "Sign up",
   },
 };
+
+export default translations;

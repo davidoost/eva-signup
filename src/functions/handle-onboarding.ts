@@ -23,7 +23,6 @@ export default async function handleOnboarding(
   }
 
   if (formData.Subscriptions && formData.Subscriptions.length > 0) {
-    console.log("subscriptions found, subscribing...");
     await subscribeUser(formData.Subscriptions, user.AuthenticationToken);
   }
 
