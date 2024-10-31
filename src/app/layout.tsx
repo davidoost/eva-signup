@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-content1 sm:bg-content2 fenix">
+    <html lang="en" className="bg-content1 sm:bg-content2 light">
       <body>
         <Providers>
           <div className="min-h-dvh w-full flex flex-col items-center justify-center sm:p-4">
