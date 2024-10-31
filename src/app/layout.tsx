@@ -3,8 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "EVA Onboarding Template",
-  description: "Onboard Customers seamlessly",
+  title: "Example Signup",
 };
 
 export default function RootLayout({
