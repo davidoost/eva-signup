@@ -467,7 +467,12 @@ export default function OnboardingForm({
         </CheckboxGroup>
       )}
 
-      {submitError && <DismissableAlert message={submitError} color="danger" />}
+      {submitError && (
+        <DismissableAlert
+          message={decodeURIComponent(submitError)}
+          color="danger"
+        />
+      )}
 
       <Button
         type="submit"
